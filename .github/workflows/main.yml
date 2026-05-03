@@ -15,3 +15,4 @@ jobs:
         with:
           name: Yudzz-V2-APK
           path: bin/*.apk
+          
