@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build with Buildozer
-        uses: Peter-Jun-Hee/buildozer-action@v1
+        uses: kivymd/kivymd-action@master
         with:
           command: buildozer android debug
           buildozer_version: master
@@ -17,4 +17,3 @@ jobs:
         with:
           name: Yudzz-V2-Final
           path: bin/*.apk
-          
