@@ -12,5 +12,5 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
-          name: Yudzz-V2
+          name: Yudzz-V2-APK
           path: bin/*.apk
