@@ -1,15 +1,19 @@
-name: Build APK
+name: Build
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
       - name: Build with Buildozer
         uses: GearSelas/buildozer-action@v2
         with:
           command: buildozer android debug
-      - name: Upload APK
+      - name: Upload
         uses: actions/upload-artifact@v4
         with:
           name: Yudzz-V2-Final
