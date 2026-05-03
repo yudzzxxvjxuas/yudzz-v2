@@ -1,7 +1,7 @@
-name: Build APK
+name: Build
 on: [push]
 jobs:
-  build:
+  apk:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -12,5 +12,6 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
-          name: Yudzz-V2-APK
+          name: Yudzz-V2
           path: bin/*.apk
+          
